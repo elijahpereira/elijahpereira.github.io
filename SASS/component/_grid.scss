@@ -1,0 +1,103 @@
+.container {
+    padding: 0 10px;
+
+    @media (min-width: $mq-sm) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+
+    @media (min-width: $mq-sm) {
+        flex-direction: row;
+      }
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+
+    @media (min-width: $mq-sm) {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+          
+        & + [class^=col] {
+          margin-left: 10px;
+       }
+    
+      }
+  }
+  
+  .theme.col-1 {
+    background-color: #927bc1;
+  }
+  
+  .theme.col-2 {
+    background-color: #fd7856;
+  }
+  
+  .theme.col-3 {
+    background-color: #deb2ee;
+  }
+  
+  .theme.col-4 {
+    background-color: #7ee6fd;
+  }
+  
+  .theme.col-5 {
+    background-color: #88d9a0;
+  }
+  
+  .theme.col-6 {
+    background-color: #4da2bb;
+  }
+  
+  .theme.col-7 {
+    background-color: #ec9fa3;
+  }
+  
+  .theme.col-8 {
+    background-color: #fd9f85;
+  }
+  
+  .theme.col-9 {
+    background-color: #e4757a;
+  }
+  
+  .theme.col-10 {
+    background-color: #63cc82;
+  }
+  
+  .theme.col-11 {
+    background-color: $color-main;
+  }
+  
+  .theme.col-12 {
+    background-color: #80e8d1;
+  }
+  
+  .card {
+    flex-basis: 100%;
+  }
+
+  //Media Queries
+
+  @media (min-width: $mq-sm) {
+    
+    .centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

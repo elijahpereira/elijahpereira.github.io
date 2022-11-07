@@ -1,0 +1,116 @@
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+//buttons
+  .default {
+    background-color: $color-main;
+
+    &:hover{
+      transition: all .5s ease-out;
+      background-color: lighten($color-main, 15%);
+    }
+  }
+  
+  .error {
+    background-color: #e4757a;
+
+    &:hover{
+      transition: all .5s ease-out;
+      background-color: lighten(#e4757a, 15%);
+    }
+  }
+  
+  .info {
+    background-color: #927bc1;
+
+    &:hover{
+      transition: all .5s ease-out;
+      background-color: lighten(#927bc1, 15%);
+    }
+  }
+  
+  .success {
+    background-color: #63cc82;
+
+    &:hover{
+      transition: all .5s ease-out;
+      background-color: lighten(#63cc82, 15%);
+    }
+  }
+  
+  .warning {
+    background-color: #fd7856;
+
+    &:hover{
+      transition: all .5s ease-out;
+      background-color: lighten(#fd7856, 15%);
+    }
+  }
+
+
+  //Media Queires
+@media (min-width:$mq-sm) {
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  
+  .col-2 {
+    flex-basis: 16.67%;
+  }
+  
+  .col-3 {
+    flex-basis: 25.00%;
+  }
+  
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  
+  .col-5 {
+    flex-basis: 41.67%;
+  }
+  
+  .col-6 {
+    flex-basis: 50.00%;
+  }
+  
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+  
+  .col-9 {
+    flex-basis: 75.00%
+  }
+  
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  
+  .col-11 {
+    flex-basis: 91.67%;
+  }
+  
+  .col-12 {
+    flex-basis: 100%;
+  }
+
+  .btn {
+    padding: 10px 30px;
+  }
+  
+  .btn + .btn {
+    margin-left: 10px;
+  }
+  
+}  

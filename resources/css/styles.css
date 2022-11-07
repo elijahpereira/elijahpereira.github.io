@@ -1,0 +1,350 @@
+
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+  font-family: 'Lato', sans-serif;
+  color: #777;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+.headline-primary {
+  color: #58e1c1;
+  margin-left: 10px;
+}
+
+.headline-secondary {
+  font-weight: 300;
+  color: #777;
+}
+
+.link {
+  color: #51ddfc;
+  font-weight: 700;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid #58e1c1;
+  border-radius: 5px;
+}
+
+
+/* ============================================= */
+/*              Grid System                      */
+/* ============================================= */
+
+.container {
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 10px;
+}
+
+[class^=col] {
+  margin-top: 10px;
+  flex-basis: 100%;
+  min-height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.theme.col-1 {
+  background-color: #927bc1;
+}
+
+.theme.col-2 {
+  background-color: #fd7856;
+}
+
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+
+.theme.col-9 {
+  background-color: #e4757a;
+}
+
+.theme.col-10 {
+  background-color: #63cc82;
+}
+
+.theme.col-11 {
+  background-color: #51ddfc;
+}
+
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+
+.card {
+  flex-basis: 100%;
+}
+
+
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+.nav {
+  padding-left: 0;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  transition: 
+    background-color .2s ease-in-out, 
+    color .2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background-color: #58e1c1;
+}
+
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.default {
+  background-color: #51ddfc;
+}
+
+.error {
+  background-color: #e4757a;
+}
+
+.info {
+  background-color: #927bc1;
+}
+
+.success {
+  background-color: #63cc82;
+}
+
+.warning {
+  background-color: #fd7856;
+}
+
+
+/* ============================================= */
+/*              Forms                            */
+/* ============================================= */
+
+.form {
+  flex-basis: 100%;
+}
+
+.input{
+  display: block;
+  width: 94%;
+  margin: 10px auto 0;
+  border: none;
+  padding: 10px;
+  border-bottom: 5px solid #58e1c1;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img-avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+.img-frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 13px;
+  border: 1px solid #ccc;
+}
+
+.img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 768px) {
+
+.container {
+  max-width: 1400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  flex-direction: row;
+}
+
+[class^=col] {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  align-items: center;
+}
+
+[class^=col] + [class^=col] {
+  margin-left: 10px;
+}
+
+.col-1 {
+  flex-basis: 8.33%;
+}
+
+.col-2 {
+  flex-basis: 16.67%;
+}
+
+.col-3 {
+  flex-basis: 25.00%;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+}
+
+.col-5 {
+  flex-basis: 41.67%;
+}
+
+.col-6 {
+  flex-basis: 50.00%;
+}
+
+.col-7 {
+  flex-basis: 58.33%;
+}
+
+.col-8 {
+  flex-basis: 66.67%;
+}
+
+.col-9 {
+  flex-basis: 75.00%
+}
+
+.col-10 {
+  flex-basis: 83.33%;
+}
+
+.col-11 {
+  flex-basis: 91.67%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+}
+
+.nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-link {
+  flex-basis: 100px;
+}
+
+.btn {
+  padding: 10px 30px;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.logo {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+}
