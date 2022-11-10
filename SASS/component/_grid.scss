@@ -12,3 +12,21 @@ main{
   position: relative;
   z-index: 2;
 }
+
+#nav-toggle > i {
+  position: absolute;
+  left:50%;
+  right:50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  color: rgb(246, 231,224);
+  font-size: 1.75rem;
+  opacity: 0;
+  transition: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
+}
+
+body:not([data-nav="true"]) > #nav-toggle:hover > .open {
+  opacity:1;
+  transform: translate(-50%,-50%) scale(1);
+}

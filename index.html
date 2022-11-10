@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="SASS/styles.css">
 </head>
 
-<body>
+<body data-nav="false">
       <!-- <header>
         <h1>Elijah Pereira</h1> -->
       <!--Navigation bar-->
@@ -19,12 +19,32 @@
             <a href="#Socials">Socials</a>
           </nav>
       </header> -->
-  <main>
-    <button id="nav-toggle" type="button">
-      <i class="open fa-light fa-bars-staggered"></i>
-      <i class="close fa-light fa-xmark-large"></i>
-    </button>
-  </main>
+  <main></main>
+  <nav id="nav">
+    <div id=""nav-links">
+      <a class="nav-links" href="#">
+        <h2 class="nav-link-label rubrik-font">Home</h2>
+        <img class="nav-link-image" src="SOURCE" />
+      </a>
+      <a class="nav-links" href="#">
+        <h2 class="nav-link-label rubrik-font">Work</h2>
+        <img class="nav-link-image" src="SOURCE" />
+      </a>
+      <a class="nav-links" href="#">
+        <h2 class="nav-link-label rubrik-font">Resume</h2>
+        <img class="nav-link-image" src="SOURCE" />
+      </a>
+      <a class="nav-links" href="#">
+        <h2 class="nav-link-label rubrik-font">Contact</h2>
+        <img class="nav-link-image" src="SOURCE" />
+      </a>
+    </div>
+  </nav>
+
+  <button id="nav-toggle" type="button" onclick="toggleNav()">
+    <i class="open fa-light fa-bars-staggered"></i>
+    <i class="close fa-light fa-xmark-large"></i>
+  </button>
 </body>
 
 </html>
