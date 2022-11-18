@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%) scale(0.9);
   color: rgb(246, 231, 224);
   font-size: 1.75rem;
-  opacity: 0;
+  opacity: 1;
 }
 
 body:not([data-nav]) > #nav-toggle:hover > .open {
