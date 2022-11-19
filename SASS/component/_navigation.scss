@@ -1,12 +1,32 @@
-.navigation{
-  a {
-    padding:5px;
-  }
+.nav-links{
+  display: flex;
+  flex-direction: row;
 }
 
-header{
-  text-align: center;
-  h1{
-    padding: 15px;
-  }
+.nav-link {
+  text-decoration: none;
+}
+.nav-link-label {
+  color:white;
+  font-size: 1.25rem;
+  margin: 0rem;
+  text-transform: uppercase;
+  padding-top: max(3vh,20px);
+}
+
+.nav-link-image {
+  width: max(20vw, 400px);
+  aspect-ratio: 1.8/1;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  object-fit:cover;
+}
+
+nav {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
 }

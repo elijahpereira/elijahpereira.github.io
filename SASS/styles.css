@@ -52,11 +52,11 @@ body, main {
 
 main {
   background-image: url(/images/background.jpeg);
+  height: 100vh;
   background-size: cover;
   background-position: center 0%;
   position: relative;
   z-index: 2;
-  opacity: 60%;
   transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
 }
 
@@ -64,15 +64,39 @@ body[data-nav=true] > main {
   transform: translateY(-50%);
 }
 
-.navigation a {
-  padding: 5px;
+.nav-links {
+  display: flex;
+  flex-direction: row;
 }
 
-header {
-  text-align: center;
+.nav-link {
+  text-decoration: none;
 }
-header h1 {
-  padding: 15px;
+
+.nav-link-label {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0rem;
+  text-transform: uppercase;
+  padding-top: max(3vh, 20px);
+}
+
+.nav-link-image {
+  width: max(20vw, 400px);
+  aspect-ratio: 1.8/1;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
 }
 
 * {

@@ -7,11 +7,11 @@ body, main {
 
 main{
   background-image: url(/images/background.jpeg);
+  height: 100vh;
   background-size: cover;
   background-position: center 0%;
   position: relative;
   z-index: 2;
-  opacity:60%;
   transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
 }
 
