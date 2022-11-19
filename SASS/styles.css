@@ -64,32 +64,6 @@ body[data-nav=true] > main {
   transform: translateY(-50%);
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-link {
-  text-decoration: none;
-}
-
-.nav-link-label {
-  color: white;
-  font-size: 1.25rem;
-  margin: 0rem;
-  text-transform: uppercase;
-  padding-top: max(3vh, 20px);
-}
-
-.nav-link-image {
-  width: max(20vw, 400px);
-  aspect-ratio: 1.8/1;
-  border-radius: 0.5rem;
-  margin-top: 0.75rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 nav {
   height: 50vh;
   width: 100%;
@@ -97,6 +71,39 @@ nav {
   left: 0px;
   bottom: 0px;
   z-index: 1;
+  overflow-x: auto;
+  overscroll-behavior-inline: conatain;
+}
+
+#nav-links {
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-top: clamp(1rem, 2vw, 3rem);
+  padding: 0rem clamp(1rem, 2vw, 2rem);
+  transform: translateY(70%) scale(0.9);
+  transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+}
+#nav-links .nav-link {
+  text-decoration: none;
+}
+#nav-links .nav-link .nav-link-label {
+  color: white;
+  font-size: 1.25rem;
+  margin: 0rem;
+  text-transform: uppercase;
+}
+#nav-links .nav-link .nav-link-image {
+  width: max(20vw, 400px);
+  aspect-ratio: 1.8/1;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: var(--shadow-2);
+}
+
+body[data-nav=true] > nav > #nav-links {
+  transform: translateY(0%) scale(1);
 }
 
 * {
