@@ -30,15 +30,23 @@
   transform: translate(-50%, -50%) scale(0.9);
   color: rgb(246, 231, 224);
   font-size: 1.75rem;
-  opacity: 1;
+  opacity: 0;
+  transition: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 400ms;
 }
 
-body:not([data-nav]) > #nav-toggle:hover > .open {
+body:not([data-nav="true"]) > #nav-toggle:hover > .open {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
+
 }
 
-body:not([data-nav]) > nav-toggle >  .close{
+body:not([data-nav="false"]) > #nav-toggle >  .close{
   opacity: 1;
   transform:translate(-50%, -50%) scale(1);
+}
+
+body:not([data-nav="false"]) > #nav-toggle{
+  background-color:DarkBlue;
 }
