@@ -28,7 +28,7 @@ nav {
     }
 
     .nav-link-image {
-      width: max(20vw, 400px);
+      width: max(15vw, 320px);
       aspect-ratio: 1.8/1;
       border-radius: 0.5rem;
       margin-top: 0.75rem;
@@ -39,5 +39,5 @@ nav {
 }
 
 body[data-nav="true"] > nav > #nav-links{
-  transform: translateY(0%) scale(1);
+  transform: translateY(-10%) scale(1);
 }
