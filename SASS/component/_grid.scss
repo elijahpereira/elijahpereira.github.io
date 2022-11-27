@@ -34,17 +34,37 @@ body[data-nav="true"] > main{
     align-items:center;
     justify-content: space-evenly;
   }
+  .contact-body{
+    position:sticky;
+    padding-left: 9vw;
+    flex-direction: column;
+    place-content: center;
+    > div{
+    width:100%;
+    text-align: left;
+    }
+  }
 }
 
 .work,
-.body {
+.body,
+.contact-body {
   display:flex;
-  width: 48.6vw ;
-  background-color: antiquewhite;
+  width: 48.8vw ;
+}
+
+.body{
+  background-color: $color-main;
+}
+
+
+.work,
+.contact-body {
+  background-color: white;
 }
 
 .filter{
-  width: 2.5rem;
+  width: 2.2rem;
   height: 100vh;
   font-size: .4rem;
   text-transform: uppercase;
@@ -69,4 +89,52 @@ body[data-nav="true"] > main{
  &:last-child{
   padding-top: 20px;
  }
+}
+
+.contactimages,
+.contact-body{
+  display:flex;
+  width: 50vw;
+  background-color:white;
+}
+.contactimages{
+  background-color:grey;
+}
+
+.cnctcttl{
+  margin-bottom:3.75rem;
+  font-size: 36px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+.cntctt{
+  font-size: 16px;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.cntcttl{
+  margin-bottom: 3.75rem;
+  font-weight: 400;
+  > h1{
+    margin: 0;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+  
+}
+
+.social-links{
+  margin: 0px;
+  padding:0px;
+  display: flex;
+  gap: 1em 3rem;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.cntcttx{
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
 }
