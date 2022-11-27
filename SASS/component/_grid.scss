@@ -58,7 +58,15 @@ body[data-nav="true"] > main{
   }
 }
 
+.resume-container{
+  display:flex;
+}
+
 .resume{
   height:100vh;
-  width: 67vw;
+  width: auto;
+  background-color: white;
+ &:last-child{
+  padding-top: 20px;
+ }
 }

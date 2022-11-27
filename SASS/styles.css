@@ -111,9 +111,17 @@ body[data-nav=true] > main {
   cursor: pointer;
 }
 
+.resume-container {
+  display: flex;
+}
+
 .resume {
   height: 100vh;
-  width: 67vw;
+  width: auto;
+  background-color: white;
+}
+.resume:last-child {
+  padding-top: 20px;
 }
 
 nav {
