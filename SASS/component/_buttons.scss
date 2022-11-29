@@ -49,5 +49,5 @@ body:not([data-nav="false"]) > #nav-toggle >  .close{
 }
 
 body:not([data-nav="false"]) > #nav-toggle{
-  background-color:DarkBlue;
+  background-color:$button-blue;
 }

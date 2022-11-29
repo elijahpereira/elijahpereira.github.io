@@ -6,7 +6,7 @@
   left: 50%;
   bottom: 3rem;
   transform: translateX(-50%);
-  background-color: rgb(182, 142, 113);
+  background-color: #C38133;
   border: none;
   border-radius: 5rem;
   outline: none;
@@ -47,7 +47,7 @@ body:not([data-nav=false]) > #nav-toggle > .close {
 }
 
 body:not([data-nav=false]) > #nav-toggle {
-  background-color: DarkBlue;
+  background-color: #3C4CC7;
 }
 
 body, main {
@@ -94,6 +94,8 @@ body[data-nav=true] > main {
   padding-left: 9vw;
   flex-direction: column;
   place-content: center;
+  line-height: 1.2;
+  font-feature-settings: "ss04", "ss06", "ss07", "ss10", "ss14";
 }
 .content .contact-body > div {
   width: 100%;
@@ -161,9 +163,14 @@ body[data-nav=true] > main {
   line-height: 1.6;
   letter-spacing: -0.01em;
 }
+@media (min-width: 1440px) {
+  .cnctcttl {
+    font-size: calc(36px + 10.8 * (100vw - 1440px) / 1440);
+  }
+}
 
 .cntctt {
-  font-size: 16px;
+  font-size: calc(16px + 4.8 * (100vw - 1440px) / 1440);
   margin-bottom: 0.35rem;
   text-transform: uppercase;
 }
@@ -173,10 +180,38 @@ body[data-nav=true] > main {
   font-weight: 400;
 }
 .cntcttl > h1 {
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+  font-feature-settings: "ss04", "ss06", "ss07", "ss10", "ss14";
+  font-weight: 400;
   margin: 0;
+}
+@media (min-width: 1024px) {
+  .cntcttl > h1 {
+    font-size: 36px;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+}
+.cntcttl > a {
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+}
+@media (min-width: 1024px) {
+  .cntcttl > a {
+    font-size: 19px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+}
+@media (min-width: 1440px) {
+  .cntcttl > a {
+    font-size: calc(19px + 5.7 * (100vw - 1440px) / 1440);
+  }
 }
 .cntcttl:last-child {
   margin-bottom: 0;
+}
+.cntcttl > li {
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
 }
 
 .social-links {
@@ -187,9 +222,21 @@ body[data-nav=true] > main {
   flex-wrap: wrap;
   list-style-type: none;
 }
-
 .cntcttx {
   font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+}
+
+.fcshvr:hover {
+  padding-left: 10px;
+  transition-duration: 0.2s;
+}
+
+.fcshvrdot {
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 100%;
+  background-color: var(--color-terracotta);
 }
 
 nav {
@@ -234,6 +281,10 @@ body[data-nav=true] > nav > #nav-links {
   transform: translateY(-10%) scale(1);
 }
 
+@font-face {
+  font-family: RecklessNeue-Book;
+  src: url(/font/RecklessNeue-Book.ttf);
+}
 * {
   font-family: "Lato", sans-serif;
   color: #1a1a1a;
@@ -247,6 +298,7 @@ p {
 
 a {
   text-decoration: none;
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
 }
 
 .headline-primary {
