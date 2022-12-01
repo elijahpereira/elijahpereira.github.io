@@ -291,39 +291,110 @@ body[data-nav=true] > nav > #nav-links {
   box-sizing: border-box;
   margin: 0px;
 }
-
-p {
-  line-height: 1.45em;
+* :after, * :before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
+body {
+  position: relative;
+  width: 100%;
+  font-family: NeueHaasGrotesk-Roman, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-feature-settings: "kern" 1, "kern";
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: var(--color-black);
+}
+
+blockquote, h1, h2, h3, h4, h5, h6, p {
+  white-space: normal;
+}
+
+.wrkheader {
+  padding-bottom: 6.25rem;
+  padding-right: 1.375rem;
+  padding-left: 5.263vw;
+}
+@media (min-width: 768px) {
+  .wrkheader {
+    padding-left: 3.03vw;
+    max-width: 78vw;
+  }
+}
+@media (min-width: 1024px) {
+  .wrkheader {
+    padding-left: 2vw;
+  }
+}
+
+.wrkheadertxt {
   font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  font-feature-settings: "ss04", "ss06", "ss07", "ss10", "ss14";
+}
+@media (min-width: 448px) {
+  .wrkheadertxt {
+    font-size: calc(40px + 8 * (100vw - 448px) / 448);
+  }
+}
+@media (min-width: 1024px) {
+  .wrkheadertxt {
+    font-size: 70px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+}
+@media (min-width: 1440px) {
+  .wrkheadertxt {
+    font-size: calc(70px + 21 * (100vw - 1440px) / 1440);
+  }
 }
 
-.headline-primary {
-  color: #58e1c1;
-  margin-left: 10px;
+.header_and_slides {
+  background-color: white;
 }
 
-.headline-secondary {
-  font-weight: 300;
-  color: #1a1a1a;
+.wrksldshowcont {
+  position: relative;
+  width: 100%;
+  height: calc(100vh + 444.711px);
 }
 
-.link {
-  color: #F2EFE6;
-  font-weight: 700;
+.wrksldshow {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid #58e1c1;
-  border-radius: 5px;
+.wrksldcont {
+  display: inline-flex;
+}
+
+.wrksld {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  gap: 15px;
+  padding-left: 5.263vw;
+}
+@media (min-width: 1024px) {
+  .wrksld {
+    padding: 30px 2vw 140px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
