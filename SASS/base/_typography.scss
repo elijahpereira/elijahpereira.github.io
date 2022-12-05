@@ -74,6 +74,12 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   background-color:white;
 }
 
+.wrksldscroll{
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
 .wrksldshowcont {
   position: relative;
   width: 100%;
@@ -89,19 +95,20 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 }
 
 .wrksldcont {
-  display: inline-flex;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 }
 
 .wrksld {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 100%;
-  width: 100%;
-  gap: 15px;
-  padding-left: 5.263vw;
-  @media (min-width: 1024px) {
-  padding: 30px 2vw 140px;
-  }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+    padding-left: 5.263vw;
 }
 
 .wrkimg {

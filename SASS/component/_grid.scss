@@ -136,6 +136,7 @@ body[data-nav="true"] > main{
 
   > a {
     font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+    text-decoration: none;
 
     @media (min-width: 1024px) {
     font-size: 19px;

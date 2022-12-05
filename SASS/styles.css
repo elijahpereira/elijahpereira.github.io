@@ -194,6 +194,7 @@ body[data-nav=true] > main {
 }
 .cntcttl > a {
   font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 @media (min-width: 1024px) {
   .cntcttl > a {
@@ -364,6 +365,12 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   background-color: white;
 }
 
+.wrksldscroll {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
 .wrksldshowcont {
   position: relative;
   width: 100%;
@@ -380,7 +387,11 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 }
 
 .wrksldcont {
-  display: inline-flex;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
 }
 
 .wrksld {
@@ -390,11 +401,6 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   gap: 15px;
   padding-left: 5.263vw;
-}
-@media (min-width: 1024px) {
-  .wrksld {
-    padding: 30px 2vw 140px;
-  }
 }
 
 .wrkimg {
