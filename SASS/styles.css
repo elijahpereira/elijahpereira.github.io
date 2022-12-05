@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #nav-toggle {
   height: 5rem;
   width: 5rem;
@@ -223,21 +224,59 @@ body[data-nav=true] > main {
   flex-wrap: wrap;
   list-style-type: none;
 }
+
 .cntcttx {
   font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
 }
-
-.fcshvr:hover {
-  padding-left: 10px;
-  transition-duration: 0.2s;
+.cntcttx > a {
+  color: #1a1a1a;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  transition: transform 250ms;
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+}
+.cntcttx > a::before {
+  content: "•";
+  font-size: 1.8rem;
+  color: #C38133;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(-0.625rem);
+  transition: opacity 250ms, transform 250ms;
+}
+.cntcttx > a:hover {
+  transform: translateX(0.9rem);
+}
+.cntcttx > a:hover::before {
+  opacity: 1;
+  transform: translate(-1rem, -0.625rem);
 }
 
-.fcshvrdot {
+.fcshvr {
+  color: #1a1a1a;
   display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
-  border-radius: 100%;
-  background-color: var(--color-terracotta);
+  text-decoration: none;
+  position: relative;
+  transition: transform 250ms;
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+}
+.fcshvr::before {
+  content: "•";
+  font-size: 1.8rem;
+  color: #C38133;
+  position: absolute;
+  padding-top: 2px;
+  opacity: 0;
+  transform: translateY(-0.625rem);
+  transition: opacity 250ms, transform 250ms;
+}
+.fcshvr:hover {
+  transform: translateX(0.9rem);
+}
+.fcshvr:hover::before {
+  opacity: 1;
+  transform: translate(-1rem, -0.625rem);
 }
 
 nav {

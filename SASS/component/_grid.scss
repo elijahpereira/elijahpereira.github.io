@@ -163,25 +163,65 @@ body[data-nav="true"] > main{
   gap: 1em 3rem;
   flex-wrap: wrap;
   list-style-type: none;
-  > li {
-    // flex-basis: 17%;
-  }
 }
 
 .cntcttx{
   font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
-}
-
-
-.fcshvr:hover{
-    padding-left: 10px;
-    transition-duration: 0.2s;
-}
-
-  .fcshvrdot {
+  > a{
+  color: #1a1a1a;
   display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
-  border-radius: 100%;
-  background-color: var(--color-terracotta);
+  text-decoration: none;
+  position: relative;
+  transition: transform 250ms;
+  font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+
+  &::before {
+    content: "\2022";
+    font-size: 1.8rem;
+    color: $color-button;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-0.625rem);
+    transition: opacity 250ms, transform 250ms;
+  }
+  
+  &:hover {
+    transform: translateX(.9rem);
+  }
+  
+  &:hover::before {
+    opacity: 1;
+    transform: translate(-1rem, -0.625rem);
+  }
+  }
+}
+
+
+.fcshvr{
+    color: #1a1a1a;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    transition: transform 250ms;
+    font-family: RecklessNeue-Book, Helvetica, Arial, sans-serif;
+  
+    &::before {
+      content: "\2022";
+      font-size: 1.8rem;
+      color: $color-button;
+      position: absolute;
+      padding-top:2px;
+      opacity: 0;
+      transform: translateY(-0.625rem);
+      transition: opacity 250ms, transform 250ms;
+    }
+    
+    &:hover {
+      transform: translateX(.9rem);
+    }
+    
+    &:hover::before {
+      opacity: 1;
+      transform: translate(-1rem, -0.625rem);
+    }
 }
