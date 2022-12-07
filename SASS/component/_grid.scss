@@ -55,16 +55,6 @@ body[data-nav="true"] > main{
   width: 48.8vw ;
 }
 
-.body{
-  background-color: $color-main;
-}
-
-
-.work,
-.contact-body {
-  background-color: white;
-}
-
 .filter{
   width: 2.2rem;
   height: 100vh;
@@ -78,6 +68,32 @@ body[data-nav="true"] > main{
       cursor: pointer;
     }
   }
+  @media (max-width: 1023px){ 
+  display:none;
+  }
+}
+
+.contact-body{
+  animation: 1s ease-out 0s 1 fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: opacity(0);
+  }
+  100% {
+    transform: opacity(1);
+  }
+}
+
+.body{
+  background-color: $color-main;
+}
+
+
+.work,
+.contact-body {
+  background-color: white;
 }
 
 .resume-container{
@@ -98,9 +114,6 @@ body[data-nav="true"] > main{
   display:flex;
   width: 50vw;
   background-color:white;
-}
-.contactimages{
-  background-color:grey;
 }
 
 .cnctcttl{

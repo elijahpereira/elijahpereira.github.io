@@ -59,7 +59,7 @@ body, main {
 }
 
 main {
-  background-image: url(https://media.istockphoto.com/id/926993450/photo/white-texture-background.jpg?s=612x612&w=0&k=20&c=3ZkCRz6B91xHO6QlbMB4svEcwU0rMHp3QlKKKh6c9Ak=);
+  background-color: white;
   height: 100vh;
   background-size: cover;
   background-position: center 0%;
@@ -110,15 +110,6 @@ body[data-nav=true] > main {
   width: 48.8vw;
 }
 
-.body {
-  background-color: #F2EFE6;
-}
-
-.work,
-.contact-body {
-  background-color: white;
-}
-
 .filter {
   width: 2.2rem;
   height: 100vh;
@@ -132,6 +123,42 @@ body[data-nav=true] > main {
 }
 .filter h1:hover {
   cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .filter {
+    display: none;
+  }
+}
+
+.contact-body {
+  -webkit-animation: 1s ease-out 0s 1 fadeIn;
+          animation: 1s ease-out 0s 1 fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: opacity(0);
+  }
+  100% {
+    transform: opacity(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+.body {
+  background-color: #F2EFE6;
+}
+
+.work,
+.contact-body {
+  background-color: white;
 }
 
 .resume-container {
@@ -152,10 +179,6 @@ body[data-nav=true] > main {
   display: flex;
   width: 50vw;
   background-color: white;
-}
-
-.contactimages {
-  background-color: grey;
 }
 
 .cnctcttl {
