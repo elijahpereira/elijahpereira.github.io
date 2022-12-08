@@ -59,7 +59,7 @@ body, main {
 }
 
 main {
-  background-color: white;
+  background-image: url(https://media.istockphoto.com/id/926993450/photo/white-texture-background.jpg?s=612x612&w=0&k=20&c=3ZkCRz6B91xHO6QlbMB4svEcwU0rMHp3QlKKKh6c9Ak=);
   height: 100vh;
   background-size: cover;
   background-position: center 0%;
@@ -130,6 +130,134 @@ body[data-nav=true] > main {
   }
 }
 
+.bannercont {
+  position: absolute;
+  text-align: right;
+  top: 1.25rem;
+  right: 5.263vw;
+  letter-spacing: -0.3px;
+}
+@media (min-width: 768px) {
+  .bannercont {
+    top: 1.563rem;
+    right: 3.03vw;
+  }
+}
+@media (min-width: 1024px) {
+  .bannercont {
+    top: 1.875rem;
+    right: 2vw;
+  }
+}
+
+.bannername {
+  font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: none;
+}
+@media (min-width: 448px) {
+  .bannername {
+    font-size: calc(11px + 2.2 * (100vw - 448px) / 448);
+  }
+}
+@media (min-width: 1024px) {
+  .bannername {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 1440px) {
+  .bannername {
+    font-size: calc(14px + 4.2 * (100vw - 1440px) / 1440);
+  }
+}
+
+.bannerdesc {
+  font-family: NeueHaasGrotesk-Roman, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: none;
+}
+@media (min-width: 448px) {
+  .bannerdesc {
+    font-size: calc(11px + 2.2 * (100vw - 448px) / 448);
+  }
+}
+@media (min-width: 1024px) {
+  .bannerdesc {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.home-body {
+  padding: 16vh 5.263vw 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .home-body {
+    padding: 15.151vw 7.575vw 5.75rem 3.03vw;
+  }
+}
+@media (min-width: 1024px) {
+  .home-body {
+    height: 100%;
+    justify-content: space-between;
+    padding: 24.5vh 5vw 3.75rem 4vw;
+  }
+}
+
+.home-content-slogan {
+  font-family: NeueHaasGrotesk-Roman, Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.85;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  position: relative;
+  font-size: 17.85vw;
+}
+@media (min-width: 448px) {
+  .home-content-slogan {
+    font-size: calc(70px + 14 * (100vw - 448px) / 448);
+  }
+}
+@media (min-width: 1024px) {
+  .home-content-slogan {
+    font-size: 100px;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+  }
+}
+@media (min-width: 1280px) {
+  .home-content-slogan {
+    font-size: 10vmin;
+  }
+}
+
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 5.5ch;
+}
+
+.slogan-line-tab {
+  margin-left: 1ch;
+}
+
+.slogan-line {
+  overflow: hidden;
+}
+
 .contact-body {
   -webkit-animation: 1s ease-out 0s 1 fadeIn;
           animation: 1s ease-out 0s 1 fadeIn;
@@ -146,11 +274,11 @@ body[data-nav=true] > main {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
+    transform: opacity(0);
   }
   100% {
-      opacity: 1;
-   }
+    transform: opacity(1);
+  }
 }
 .body {
   background-color: #F2EFE6;
@@ -174,7 +302,7 @@ body[data-nav=true] > main {
   padding-top: 20px;
 }
 
-.contact-image-side,
+.contactimages,
 .contact-body {
   display: flex;
   width: 50vw;
@@ -346,7 +474,11 @@ body[data-nav=true] > nav > #nav-links {
 
 @font-face {
   font-family: RecklessNeue-Book;
-  src: url(/font/RecklessNeue-Book.ttf);
+  src: url(/fonts/RecklessNeue-Book.ttf);
+}
+@font-face {
+  font-family: NeueHaasGrotesk;
+  src: url(/fonts/NeueHaasGrotesk-Roman.ttf);
 }
 * {
   font-family: "Lato", sans-serif;

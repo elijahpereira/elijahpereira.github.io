@@ -73,6 +73,113 @@ body[data-nav="true"] > main{
   }
 }
 
+.bannercont{
+  position: absolute;
+  text-align: right;
+  top: 1.25rem;
+  right: 5.263vw;
+  letter-spacing: -.3px;
+  @media (min-width: 768px) {
+    top: 1.563rem;
+    right: 3.03vw;
+  }
+  @media (min-width: 1024px) {
+    top: 1.875rem;
+    right: 2vw;
+  }
+}
+
+.bannername{
+  font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: none;
+  @media (min-width: 448px) {
+    font-size: calc(11px + 2.2 * ((100vw - 448px) / 448));
+  }
+  @media (min-width: 1024px) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  @media (min-width: 1440px) {
+    font-size: calc(14px + 4.2 * ((100vw - 1440px) / 1440));
+  }
+}
+
+.bannerdesc{
+  font-family: NeueHaasGrotesk-Roman, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: none;
+  @media (min-width: 448px) {
+    font-size: calc(11px + 2.2 * ((100vw - 448px) / 448));
+}
+  @media (min-width: 1024px) {
+      font-size: 14px;
+      line-height: 1.2;
+  }
+}
+
+.home-body {
+  padding: 16vh 5.263vw 0px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  @media (min-width: 768px) {
+    padding: 15.151vw 7.575vw 5.75rem 3.03vw;
+  }
+  @media (min-width: 1024px) {
+      height: 100%;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      padding: 24.5vh 5vw 3.75rem 4vw;
+  }
+}
+
+.home-content-slogan {
+    font-family: NeueHaasGrotesk-Roman, Helvetica, Arial, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.85;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    position: relative;
+    font-size: 17.85vw;
+    @media (min-width: 448px) {
+      font-size: calc(70px + 14 * ((100vw - 448px) / 448));
+  }
+  @media (min-width: 1024px) {
+    font-size: 100px;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+  }
+  @media (min-width: 1280px) {
+    font-size: 10vmin;
+  }
+}
+
+.slogan-container {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  height: 5.5ch;
+}
+
+.slogan-line-tab {
+  margin-left: 1ch;
+}
+
+.slogan-line {
+    overflow: hidden;
+    
+}
 .contact-body{
   animation: 1s ease-out 0s 1 fadeIn;
 }
