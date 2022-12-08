@@ -174,7 +174,7 @@ body[data-nav=true] > main {
   padding-top: 20px;
 }
 
-.contactimages,
+.contact-image-side,
 .contact-body {
   display: flex;
   width: 50vw;
