@@ -6,7 +6,7 @@ body, main {
 }
 
 main{
-  background-image: url(https://media.istockphoto.com/id/926993450/photo/white-texture-background.jpg?s=612x612&w=0&k=20&c=3ZkCRz6B91xHO6QlbMB4svEcwU0rMHp3QlKKKh6c9Ak=);
+  background-color: white;
   height: 100vh;
   background-size: cover;
   background-position: center 0%;
@@ -29,6 +29,9 @@ body[data-nav="true"] > main{
   justify-content:space-between;
   background-position: center 0%;
   transition: transform 500ms $slide-in;
+  @media (max-width: 768px){
+    flex-direction:column;
+  }
   > div {
     flex-direction: initial;
     align-items:center;
@@ -41,6 +44,13 @@ body[data-nav="true"] > main{
     place-content: center;
     line-height: 1.2;
     font-feature-settings: "ss04", "ss06", "ss07", "ss10", "ss14";
+    @media (max-width: 768px){
+      width: 100vw;
+      padding: 7vh 9vw;
+    }
+    @media (min-width: 1024px){
+      padding: 0 0 0 9vw;
+    }
     > div{
     width:100%;
     text-align: left;
@@ -181,7 +191,8 @@ body[data-nav="true"] > main{
     
 }
 .contact-body{
-  animation: 1s ease-out 0s 1 fadeIn;
+  -webkit-animation: 2s ease-in 0s 1 fadeIn;
+  animation: 2s ease-in 0s 1 fadeIn;
 }
 
 @keyframes fadeIn {
@@ -220,7 +231,7 @@ body[data-nav="true"] > main{
 .contact-body{
   display:flex;
   width: 50vw;
-  background-color:white;
+  background-color: white;
 }
 
 .cnctcttl{
@@ -344,4 +355,17 @@ body[data-nav="true"] > main{
       opacity: 1;
       transform: translate(-1rem, -0.625rem);
     }
+}
+
+.contact-image-side{
+  width: 50vw;
+  display:grid;
+}
+
+.contactimage{
+  width:100%;
+  height:100%;
+  scale:3;
+  object-fit:cover;
+  @media (min-width: 1024px){scale: 1;}
 }
