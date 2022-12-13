@@ -367,5 +367,6 @@ body[data-nav="true"] > main{
   height:100%;
   scale:3;
   object-fit:cover;
-  @media (min-width: 1024px){scale: 1;}
+  @media (min-width: 768px){scale: 1;}
+  
 }

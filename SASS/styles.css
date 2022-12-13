@@ -458,7 +458,7 @@ body[data-nav=true] > main {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .contactimage {
     scale: 1;
   }
