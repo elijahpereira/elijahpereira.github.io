@@ -305,10 +305,6 @@ body[data-nav=true] > main {
   background-color: white;
 }
 
-.resume-container {
-  display: flex;
-}
-
 .resume {
   height: 100vh;
   width: auto;
@@ -458,10 +454,81 @@ body[data-nav=true] > main {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .contactimage {
     scale: 1;
   }
+}
+
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Name-Plate Name-Plate" "location_contact location_contact" "Resume-Experience Resume-Experience" "Resume-Experience Resume-Experience" "Resume-Small Resume-Small";
+  font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
+}
+.resume-container .name:hover {
+  transition: transform 1s;
+  transform: translateX(1rem);
+  transition-duration: 1s;
+}
+@media (min-width: 768px) {
+  .resume-container {
+    grid-template-areas: "Name-Plate Name-Plate Name-Plate location_contact" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small" "Resume-Experience Resume-Experience Resume-Experience Resume-Small";
+  }
+}
+
+.Name-Plate {
+  grid-area: Name-Plate;
+  padding: 0 0 0 3rem;
+}
+.Name-Plate h1 {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .Name-Plate {
+    width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  .Name-Plate {
+    width: auto;
+    padding: 2rem 1rem 2rem 3rem;
+  }
+}
+
+.location_contact {
+  grid-area: location_contact;
+  padding: 0rem 2rem 1rem 3rem;
+}
+@media (min-width: 768px) {
+  .location_contact {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}
+
+.Resume-Experience {
+  grid-area: Resume-Experience;
+  background-color: grey;
+  padding: 2rem 1rem 2rem 3rem;
+}
+.Resume-Experience .titles {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: rgb(33, 121, 199);
+}
+.Resume-Experience .timeframe {
+  font-size: 0.8em;
+  color: #666666;
+}
+.Resume-Experience .experience_li li {
+  color: #666666;
+}
+
+.Resume-Small {
+  grid-area: Resume-Small;
+  background-color: slategray;
 }
 
 nav {
