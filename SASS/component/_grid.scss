@@ -374,8 +374,6 @@ body[data-nav="true"] > main{
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
   gap: 0px 0px; 
-
-  
   grid-template-areas: 
     "Name-Plate Name-Plate"
     "location_contact location_contact"
@@ -406,6 +404,7 @@ body[data-nav="true"] > main{
   }
 }
 
+
 .Name-Plate {
   grid-area: Name-Plate;
   padding: 0 0 0 3rem;
@@ -420,6 +419,7 @@ body[data-nav="true"] > main{
     padding: 2rem 1rem 2rem 3rem;
   }
 }
+
 .location_contact {
   grid-area: location_contact;
   padding: 0rem 2rem 1rem 3rem;
@@ -427,27 +427,37 @@ body[data-nav="true"] > main{
     padding: 2rem 1rem 2rem 1rem;
   }
 }
+
 .Resume-Experience {
   grid-area: Resume-Experience;
   background-color: grey;
   padding: 2rem 1rem 2rem 3rem;
-  .titles{
-    text-transform:capitalize;
-    font-size: 1rem;
-    color: rgb(33,121,199);
-  }
   .timeframe{
     font-size:.8em;
     color:#666666;
   }
-  .experience_li{
-    li{
-    color: #666666;
-    }
-  }
+}
+.titles{
+  text-transform:capitalize;
+  font-size: 1rem;
+  color: rgb(33,121,199);
+}
+.experience_li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  li{
+  color: #666666;
+  line-height: 2rem;}
 }
 
+.hobbies_text{
+  color: #666666;
+  word-wrap: break-word;
+  word-break:break-all
+  }
+
 .Resume-Small {
+  padding: 2rem 1rem 2rem 3rem;
   grid-area: Resume-Small;
   background-color: slategray;
 }
