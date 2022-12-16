@@ -382,7 +382,7 @@ body[data-nav="true"] > main{
     "Resume-Small Resume-Small"; 
     font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
   
-    .name{
+    .name, .name-desc{
       &:hover{
         transition: transform 1s;
         transform: translateX(1rem);
@@ -407,16 +407,24 @@ body[data-nav="true"] > main{
 
 .Name-Plate {
   grid-area: Name-Plate;
-  padding: 0 0 0 3rem;
+  text-align: center;
+  max-height: 10rem;
   h1{
+    padding: 2rem 0 .25rem 0;
     margin:0;
   }
-
   @media(max-width:767px){
-    width:100vw;}
+    width:100vw;
+  }
   @media (min-width:768px){
     width: auto;
-    padding: 2rem 1rem 2rem 3rem;
+    text-align: left;
+    h1{
+      padding: 2rem 0 .25rem 3rem;
+    }
+    p{
+      padding: .25rem 0 2rem 3rem;
+    }
   }
 }
 
@@ -430,7 +438,7 @@ body[data-nav="true"] > main{
 
 .Resume-Experience {
   grid-area: Resume-Experience;
-  background-color: grey;
+
   padding: 2rem 1rem 2rem 3rem;
   .timeframe{
     font-size:.8em;

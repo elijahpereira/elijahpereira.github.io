@@ -468,7 +468,7 @@ body[data-nav=true] > main {
   grid-template-areas: "Name-Plate Name-Plate" "location_contact location_contact" "Resume-Experience Resume-Experience" "Resume-Experience Resume-Experience" "Resume-Small Resume-Small";
   font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
 }
-.resume-container .name:hover {
+.resume-container .name:hover, .resume-container .name-desc:hover {
   transition: transform 1s;
   transform: translateX(1rem);
   transition-duration: 1s;
@@ -481,9 +481,11 @@ body[data-nav=true] > main {
 
 .Name-Plate {
   grid-area: Name-Plate;
-  padding: 0 0 0 3rem;
+  text-align: center;
+  max-height: 10rem;
 }
 .Name-Plate h1 {
+  padding: 2rem 0 0.25rem 0;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -494,7 +496,13 @@ body[data-nav=true] > main {
 @media (min-width: 768px) {
   .Name-Plate {
     width: auto;
-    padding: 2rem 1rem 2rem 3rem;
+    text-align: left;
+  }
+  .Name-Plate h1 {
+    padding: 2rem 0 0.25rem 3rem;
+  }
+  .Name-Plate p {
+    padding: 0.25rem 0 2rem 3rem;
   }
 }
 
@@ -510,7 +518,6 @@ body[data-nav=true] > main {
 
 .Resume-Experience {
   grid-area: Resume-Experience;
-  background-color: grey;
   padding: 2rem 1rem 2rem 3rem;
 }
 .Resume-Experience .timeframe {
