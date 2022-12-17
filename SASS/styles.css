@@ -463,7 +463,6 @@ body[data-nav=true] > main {
 .resume-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-template-areas: "Name-Plate Name-Plate" "location_contact location_contact" "Resume-Experience Resume-Experience" "Resume-Experience Resume-Experience" "Resume-Small Resume-Small";
   font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
@@ -518,9 +517,10 @@ body[data-nav=true] > main {
 
 .Resume-Experience {
   grid-area: Resume-Experience;
-  padding: 2rem 1rem 2rem 3rem;
+  padding: 0rem 1rem 0rem 3rem;
 }
 .Resume-Experience .timeframe {
+  padding-top: 0.1rem;
   font-size: 0.8em;
   color: #666666;
 }
@@ -537,7 +537,8 @@ body[data-nav=true] > main {
 }
 .experience_li li {
   color: #666666;
-  line-height: 2rem;
+  line-height: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .hobbies_text {
@@ -547,9 +548,19 @@ body[data-nav=true] > main {
 }
 
 .Resume-Small {
-  padding: 2rem 1rem 2rem 3rem;
+  padding: 0rem 1rem rem 3rem;
   grid-area: Resume-Small;
-  background-color: slategray;
+}
+
+.resume-link {
+  text-align: center;
+  justify-content: center;
+  font-family: NeueHaasGrotesk-Medium, Helvetica, Arial, sans-serif;
+  font-size: 0.5rem;
+}
+.resume-link a {
+  text-decoration: none;
+  font-weight: 800;
 }
 
 nav {
