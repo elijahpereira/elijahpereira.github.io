@@ -19,6 +19,31 @@ nav {
 
   .nav-link {
     text-decoration: none;
+    &:hover {
+      .nav-link-label {
+        transition: transform 250ms;
+        transform: translate(1rem, 0rem);
+      }
+      // .nav-link-image{
+      //   transition: transform 250ms;
+      //   transform:  scale(.9);
+      // }
+    }
+    &::before {
+      content: "\2022";
+      font-size: 4rem;
+      color: $color-button;
+      position: absolute;
+      top:-15px;
+      opacity: 0;
+      transform: translateY(-0.625rem);
+      transition: opacity 250ms, transform 250ms;
+    }
+    
+    &:hover::before {
+      opacity: 1;
+      transform: translate(-.5rem, -0.625rem);
+    }
 
     .nav-link-label {
       color:white;
@@ -35,6 +60,10 @@ nav {
       object-fit:cover;
       box-shadow: rgba(230, 0, 0, 0.35) 0px -50px 36px -28px inset;
     }
+  }
+
+  @media (max-width: 1024px){
+    margin-top: clamp(1.1rem, 2vw, 3rem);
   }
 }
 
