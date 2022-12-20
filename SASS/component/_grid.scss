@@ -62,7 +62,7 @@ body[data-nav="true"] > main{
 .body,
 .contact-body {
   display:flex;
-  width: 48.8vw ;
+  width: 50vw ;
 }
 
 .filter{
@@ -467,6 +467,7 @@ body[data-nav="true"] > main{
   }
 }
 .location{
+  text-decoration: none;
   @media(min-width: 1920px){
     font-size: 1.2rem;
   }
@@ -502,15 +503,25 @@ body[data-nav="true"] > main{
     display:inherit;
   }
 }
-.hobbies_text{
+
+.goals{
   color: #666666;
   word-wrap: break-word;
-  word-break:break-all;
-  max-width: 1rem;
+  word-break:keep-all;
+  max-width: 15rem;
+  margin: 0px;
+  @media (min-width: 1440px){
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  @media (min-width: 1920px){
+    font-size: 1.3rem;
+    line-height: 2.09rem;
+  }
   }
 
 .Resume-Small {
-  padding: 0rem 1rem 0rem 3rem;
+  padding: 0rem 1rem 0rem 1rem;
   grid-area: Resume-Small;
   display:none;
   @media (min-width: 768px){
