@@ -468,6 +468,30 @@ body[data-nav="true"] > main{
 }
 .location{
   text-decoration: none;
+  &::before {
+    content: "\2022";
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: $color-button;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-0.625rem);
+    transition: opacity 250ms, transform 250ms;
+  }
+  
+  &:hover {
+    transform: translateX(.9rem);
+    transition: transform 250ms;
+  }
+  
+  &:hover::before {
+    opacity: 1;
+    transform: translate(-1rem, -0.625rem);
+  }
+  >a {
+    text-decoration: none;
+  }
+
   @media(min-width: 1920px){
     font-size: 1.2rem;
   }
