@@ -458,6 +458,7 @@ body[data-nav="true"] > main{
 .titles{
   text-transform:capitalize;
   font-size: 1rem;
+  
   color: rgb(33,121,199);
   @media (min-width: 1440px){
     font-size: 1.2rem;
@@ -466,12 +467,12 @@ body[data-nav="true"] > main{
     font-size: 1.5rem;
   }
 }
-.location{
+.location {
   text-decoration: none;
   &::before {
     content: "\2022";
     font-size: 2.1rem;
-    font-weight: 300;
+    font-weight:300;
     color: $color-button;
     position: absolute;
     opacity: 0;
@@ -488,12 +489,16 @@ body[data-nav="true"] > main{
     opacity: 1;
     transform: translate(-1rem, -0.625rem);
   }
-  >a {
+  > a {
     text-decoration: none;
   }
 
   @media(min-width: 1920px){
     font-size: 1.2rem;
+    &:hover::before {
+      opacity: 1;
+      transform: translate(-1rem, -0.525rem);
+    }
   }
 }
 .experience_li{

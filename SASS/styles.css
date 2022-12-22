@@ -575,6 +575,10 @@ body[data-nav=true] > main {
   .location {
     font-size: 1.2rem;
   }
+  .location:hover::before {
+    opacity: 1;
+    transform: translate(-1rem, -0.525rem);
+  }
 }
 
 .experience_li {
