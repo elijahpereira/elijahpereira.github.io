@@ -166,12 +166,8 @@ body[data-nav="true"] > main{
       font-size: calc(70px + 14 * ((100vw - 448px) / 448));
   }
   @media (min-width: 1024px) {
-    font-size: 100px;
     line-height: 0.85;
     letter-spacing: -0.04em;
-  }
-  @media (min-width: 1280px) {
-    font-size: 10vmin;
   }
 }
 
