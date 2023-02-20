@@ -960,6 +960,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 }
 .image-cont img {
   height: 13.8rem;
+  width: 21rem;
 }
 .image-cont img:hover {
   opacity: 50%;
@@ -977,15 +978,24 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   padding: 0.5rem;
   height: 7rem;
 }
-.image-cont button {
+.image-cont .buttons a button {
+  cursor: pointer;
   font-size: 1.2rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: 1rem;
   background-color: white;
   border-radius: 8px;
   height: 3rem;
   width: 9rem;
   margin-top: 0.5rem;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+}
+.image-cont .buttons .github-link button {
+  background-color: #6e5494;
+  color: white;
+  padding: 0;
+  border: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

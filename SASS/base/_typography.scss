@@ -171,6 +171,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   
   img {
     height: 13.8rem;
+    width: 21rem;
       &:hover{
         opacity:50%;
         transition-duration: .5s;
@@ -188,14 +189,27 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
     padding: 0.5rem;
     height: 7rem;
   }
-  button {
-    font-size: 1.2rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
-    background-color: white;
-    border-radius: 8px;
-    height: 3rem;
-    width: 9rem;
-    margin-top:.5rem;
-  }
+  .buttons {
+    a button {
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+        // margin-right: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        height: 3rem;
+        width: 9rem;
+        margin-top:.5rem;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+    }
+
+    .github-link button {
+      background-color:#6e5494;
+      color: white;
+      padding: 0;
+      border: none;
+    }
+  } 
 }
