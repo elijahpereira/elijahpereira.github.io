@@ -5,4 +5,7 @@ Opensource portfolio featuring a dynamic interactive nav, unique styles that has
 <a href="https://htmlpreview.github.io/?https://github.com/elijahpereira/Open-Source-Porfolio/blob/main/index.html">PREVIEW HERE!</a>
 
 # Interesting Features
-Dynamic Navigation and link styles
+<ul>
+  <li>Dynamic Navigation</li>
+  <li>link styles</li>
+</ul>
