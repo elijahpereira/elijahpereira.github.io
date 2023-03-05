@@ -8,4 +8,5 @@ Opensource portfolio featuring a dynamic interactive nav, unique styles that has
 <ul>
   <li>Dynamic Navigation</li>
   <li>link styles</li>
+  <li>Font Awesome Library</li>
 </ul>
