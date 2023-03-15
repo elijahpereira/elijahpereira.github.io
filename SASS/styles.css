@@ -93,9 +93,9 @@ body[data-nav=true] > main {
   flex-direction: initial;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
 }
 .content .contact-body {
-  position: -webkit-sticky;
   position: sticky;
   padding-left: 9vw;
   flex-direction: column;
@@ -269,17 +269,7 @@ body[data-nav=true] > main {
 }
 
 .contact-body {
-  -webkit-animation: 2s ease-in 0s 1 fadeIn;
   animation: 2s ease-in 0s 1 fadeIn;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    transform: opacity(0);
-  }
-  100% {
-    transform: opacity(1);
-  }
 }
 
 @keyframes fadeIn {
@@ -895,7 +885,6 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 }
 
 .wrksldshow {
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   width: 100%;
