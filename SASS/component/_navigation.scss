@@ -16,7 +16,10 @@ nav {
   padding: 0rem clamp(1rem,2vw,2rem);
   transform: translateY(70%) scale(0.9);
   transition: transform 500ms $slide-in;
-
+  overflow: auto;
+  // &::-webkit-scrollbar{
+  //   display: none;
+  // }
   .nav-link {
     text-decoration: none;
     &:hover {
@@ -70,3 +73,4 @@ nav {
 body[data-nav="true"] > nav > #nav-links{
   transform: translateY(-10%) scale(1);
 }
+
