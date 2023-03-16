@@ -695,8 +695,10 @@ body[data-nav=true] > main {
   }
 }
 
-.work {
-  padding-top: 5rem;
+@media (max-width: 769px) {
+  .work {
+    padding-top: 5rem;
+  }
 }
 
 nav {
