@@ -161,6 +161,8 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   background-color: $color-main;
   height:30rem;
   display:flex;
+  // overflow: hidden;
+  overflow-x: scroll;
   flex-direction: row;
 }
 

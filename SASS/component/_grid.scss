@@ -359,8 +359,8 @@ body[data-nav="true"] > main{
 .contactimage{
   width:100%;
   height:100%;
-  scale:3;
   object-fit:cover;
+  overflow:hidden;
   @media (min-width: 769px){scale: 1;}
   
 }
@@ -610,4 +610,8 @@ body[data-nav="true"] > main{
     justify-content: left;
     margin: 1rem 0rem 0rem 1.6rem;
   }
+}
+
+.work{
+  padding-top: 5rem;
 }

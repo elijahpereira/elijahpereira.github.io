@@ -434,9 +434,9 @@ body[data-nav=true] > main {
 .contactimage {
   width: 100%;
   height: 100%;
-  scale: 3;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 @media (min-width: 769px) {
   .contactimage {
@@ -695,6 +695,10 @@ body[data-nav=true] > main {
   }
 }
 
+.work {
+  padding-top: 5rem;
+}
+
 nav {
   height: 50vh;
   width: 100%;
@@ -939,6 +943,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   background-color: #F2EFE6;
   height: 30rem;
   display: flex;
+  overflow-x: scroll;
   flex-direction: row;
 }
 
