@@ -946,7 +946,8 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   background-color: #F2EFE6;
   height: 30rem;
   display: flex;
-  overflow-x: scroll;
+  cursor: grab;
+  overflow: auto;
   flex-direction: row;
 }
 
