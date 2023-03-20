@@ -801,14 +801,15 @@ body[data-nav=true] > main {
   text-decoration: none;
   background-color: #7577bf;
   font-weight: 600;
-  padding: 1em 1.5em;
+  padding: 0.5em 1.5em;
   border-radius: 1em;
-  margin-bottom: 4em;
+  margin-bottom: 100px;
 }
 
 .work-desc-text {
+  font-size: 1.1em;
   color: #f2f2f2;
-  padding: 3em 10em;
+  padding: 2em 10em;
 }
 
 nav {
