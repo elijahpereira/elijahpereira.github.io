@@ -812,6 +812,10 @@ body[data-nav=true] > main {
   padding: 2em 10em;
 }
 
+.work-img {
+  filter: drop-shadow(0 -0.25em 2.25em rgba(0, 0, 0, 0.05));
+}
+
 nav {
   height: 50vh;
   width: 100%;
