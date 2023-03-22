@@ -719,14 +719,11 @@ body[data-nav=true] > main {
 .mySlides {
   display: none;
 }
-@media screen {
-  .mySlides {
-    max-width: 1080px;
+@media (max-width: 600px) {
+  .mySlides.fade {
+    height: 18em;
+    overflow: hidden;
   }
-}
-.mySlides.fade {
-  height: 31em;
-  overflow: auto;
 }
 
 /* Next & previous buttons */
@@ -823,7 +820,11 @@ body[data-nav=true] > main {
   color: #f2f2f2;
   margin: 2em 10em;
 }
-
+@media (max-width: 650px) {
+  .work-desc-text {
+    margin: 1em 1em;
+  }
+}
 .work-img {
   filter: drop-shadow(0 -0.25em 2.25em rgba(0, 0, 0, 0.05));
 }
