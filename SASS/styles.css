@@ -725,6 +725,12 @@ body[data-nav=true] > main {
     overflow: hidden;
   }
 }
+@media (min-width: 768px) {
+  .mySlides.fade {
+    height: 34em;
+    overflow: hidden;
+  }
+}
 
 /* Next & previous buttons */
 .prev, .next {

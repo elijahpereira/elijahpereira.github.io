@@ -641,6 +641,12 @@ body[data-nav="true"] > main{
         overflow: hidden;
       } 
     }
+    @media (min-width: 768px){
+      &.fade {
+        height: 34em;
+        overflow: hidden;
+      } 
+    }
   }
 
 /* Next & previous buttons */
