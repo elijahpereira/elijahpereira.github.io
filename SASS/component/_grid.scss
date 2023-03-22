@@ -626,12 +626,21 @@ body[data-nav="true"] > main{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  .one{
+    display: block;
+  }
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-}
+  //media queries for slideshow
+  @media screen {max-width: 1080px}
+    &.fade {
+      height: 31em;
+      overflow: auto;
+    }
+  }
 
 /* Next & previous buttons */
 .prev, .next {
@@ -720,7 +729,7 @@ body[data-nav="true"] > main{
 .work-desc-text{
   font-size: 1.1em;
   color: #f2f2f2;
-  padding: 2em 10em;
+  margin: 2em 10em;
 }
 
 .work-img{

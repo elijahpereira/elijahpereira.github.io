@@ -711,10 +711,22 @@ body[data-nav=true] > main {
   position: relative;
   margin: auto;
 }
+.slideshow-container .one {
+  display: block;
+}
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+@media screen {
+  .mySlides {
+    max-width: 1080px;
+  }
+}
+.mySlides.fade {
+  height: 31em;
+  overflow: auto;
 }
 
 /* Next & previous buttons */
@@ -809,7 +821,7 @@ body[data-nav=true] > main {
 .work-desc-text {
   font-size: 1.1em;
   color: #f2f2f2;
-  padding: 2em 10em;
+  margin: 2em 10em;
 }
 
 .work-img {
