@@ -41,7 +41,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 
 
 .wrkheader {
-  padding-top: 5rem;
+  padding-top: 3.1rem;
   padding-bottom: 2rem;
   padding-right: 1.375rem;
   padding-left: 5.263vw;
@@ -87,7 +87,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
   letter-spacing: -0.01em;
   }
   @media (min-width: 1440px) {
-      font-size: calc(70px + 21 * ((100vw - 1440px) / 1440));
+      font-size: calc(70px + 21 * ((20vw - 1440px) / 1440));
   }
 }
 

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #nav-toggle {
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   position: fixed;
   z-index: 3;
   left: 50%;
@@ -30,7 +30,7 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(0.9);
   color: rgb(246, 231, 224);
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   opacity: 0;
   transition: transform, opacity;
   transition-timing-function: ease;
@@ -93,7 +93,17 @@ body[data-nav=true] > main {
   flex-direction: initial;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+}
+@media (max-width: 768px) {
+  .content > div {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .content > .contact-image-side {
+    width: 50vw;
+    display: grid;
+  }
 }
 .content .contact-body {
   position: sticky;
@@ -426,11 +436,6 @@ body[data-nav=true] > main {
   transform: translate(-1rem, -0.625rem);
 }
 
-.contact-image-side {
-  width: 50vw;
-  display: grid;
-}
-
 .contactimage {
   width: 100%;
   height: 100%;
@@ -727,8 +732,14 @@ body[data-nav=true] > main {
 }
 @media (min-width: 768px) {
   .mySlides.fade {
-    height: 34em;
+    height: 32em;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 1440px) {
+  .wrkheadertxt {
+    padding-left: 3rem;
   }
 }
 
@@ -814,7 +825,7 @@ body[data-nav=true] > main {
 .work-btn {
   color: white;
   text-decoration: none;
-  background-color: #7577bf;
+  background-color: #C38133;
   font-weight: 600;
   padding: 0.5em 1.5em;
   border-radius: 1em;
@@ -833,6 +844,12 @@ body[data-nav=true] > main {
 }
 .work-img {
   filter: drop-shadow(0 -0.25em 2.25em rgba(0, 0, 0, 0.05));
+}
+
+@media (min-width: 1440px) {
+  .slide-selector {
+    margin-top: 6vh;
+  }
 }
 
 nav {
@@ -940,7 +957,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 }
 
 .wrkheader {
-  padding-top: 5rem;
+  padding-top: 3.1rem;
   padding-bottom: 2rem;
   padding-right: 1.375rem;
   padding-left: 5.263vw;
@@ -1005,7 +1022,7 @@ blockquote, h1, h2, h3, h4, h5, h6, p {
 }
 @media (min-width: 1440px) {
   .wrkheadertxt {
-    font-size: calc(70px + 21 * (100vw - 1440px) / 1440);
+    font-size: calc(70px + 21 * (20vw - 1440px) / 1440);
   }
 }
 

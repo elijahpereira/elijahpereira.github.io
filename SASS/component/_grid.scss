@@ -36,7 +36,15 @@ body[data-nav="true"] > main{
     flex-direction: initial;
     align-items:center;
     justify-content: space-evenly;
-    width: 100%;
+    @media (max-width: 768px){
+      width: 100%;
+    }
+  }
+  > .contact-image-side {
+    @media (min-width:768px){
+      width: 50vw;
+      display:grid; 
+    }
   }
   .contact-body{
     position:sticky;
@@ -351,11 +359,6 @@ body[data-nav="true"] > main{
     }
 }
 
-.contact-image-side{
-  width: 50vw;
-  display:grid;
-}
-
 .contactimage{
   width:100%;
   height:100%;
@@ -643,12 +646,23 @@ body[data-nav="true"] > main{
     }
     @media (min-width: 768px){
       &.fade {
-        height: 34em;
+        height: 32em;
         overflow: hidden;
       } 
     }
   }
 
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////WORK.HTML STYLES//////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+.wrkheadertxt{
+  @media(min-width: 1440px){
+    padding-left: 3rem;
+  }
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -726,7 +740,7 @@ body[data-nav="true"] > main{
 .work-btn{
   color: white;
   text-decoration: none;
-  background-color: #7577bf;
+  background-color: $color-button;
   font-weight: 600;
   padding: .5em 1.5em;
   border-radius: 1em;
@@ -747,4 +761,10 @@ body[data-nav="true"] > main{
 
 .work-img{
   filter: drop-shadow(0 -0.25em 2.25em rgba(0, 0, 0, 0.05));
+}
+
+.slide-selector{
+  @media (min-width:1440px){
+    margin-top: 6vh;
+  }
 }

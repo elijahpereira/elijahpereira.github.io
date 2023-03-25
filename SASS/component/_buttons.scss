@@ -1,7 +1,7 @@
 // 
 #nav-toggle{
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   position: fixed;
   z-index: 3;
   left:50%;
@@ -30,7 +30,7 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(0.9);
   color: rgb(246, 231, 224);
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   opacity: 0;
   transition: transform, opacity;
   transition-timing-function: ease;
