@@ -22,6 +22,10 @@
 &:active{
     transform:translateX(-50%) scale(0.96);
   }
+  @media (min-width: 1920px){
+    height: 4rem;
+    width: 4em;
+  }
 }
 
 #nav-toggle > i {

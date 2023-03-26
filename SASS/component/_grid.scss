@@ -626,7 +626,7 @@ body[data-nav="true"] > main{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1100px;
   position: relative;
   margin: auto;
   .one{
@@ -647,6 +647,12 @@ body[data-nav="true"] > main{
     @media (min-width: 768px){
       &.fade {
         height: 32em;
+        overflow: hidden;
+      } 
+    }
+    @media (min-width: 1920px){
+      &.fade {
+        height: 39em;
         overflow: hidden;
       } 
     }
@@ -766,5 +772,8 @@ body[data-nav="true"] > main{
 .slide-selector{
   @media (min-width:1440px){
     margin-top: 6vh;
+  }
+  @media (min-width:1920px){
+    margin-top: .25vh;
   }
 }
