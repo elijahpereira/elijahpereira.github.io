@@ -74,6 +74,14 @@ body[data-nav="true"] > main{
   width: 50vw ;
 }
 
+///////////////
+// home page //
+///////////////
+
+.company-logo{
+  max-height: 2rem;
+}
+
 .filter{
   width: 2.2rem;
   height: 100vh;
@@ -93,12 +101,30 @@ body[data-nav="true"] > main{
   }
 }
 
+.filter-one,
+.wrk-two {
+  display:none;
+  @media (min-width:1150px){
+    display:block;
+  }
+}
+
+.filter-two{
+  display:none;
+  @media (min-width: 1127px){
+    display:block;
+  }
+}
+
 .bannercont{
   position: absolute;
   text-align: right;
   top: 1.25rem;
   right: 5.263vw;
   letter-spacing: -.3px;
+  display:flex;
+  width: 100vw;
+  justify-content: space-between;
   @media (min-width: 768px) {
     top: 1.563rem;
     right: 3.03vw;
@@ -107,6 +133,19 @@ body[data-nav="true"] > main{
     top: 1.875rem;
     right: 2vw;
   }
+}
+
+.company-logo{
+  max-height: 2.2rem;
+  margin-left: 3rem;
+  filter: invert(5%) sepia(21%) saturate(32%) hue-rotate(319deg) brightness(100%) contrast(88%);
+  @media (min-width:1920px){
+    margin-left: 5rem;
+  }
+}
+
+.banner-right{
+  flex-direction: row;
 }
 
 .bannername{
@@ -151,13 +190,13 @@ body[data-nav="true"] > main{
   -webkit-box-pack: center;
   justify-content: center;
   @media (min-width: 768px) {
-    padding: 15.151vw 7.575vw 5.75rem 3.03vw;
+    padding: 10vw 3vw 5.75rem 3vw;
   }
   @media (min-width: 1024px) {
       height: 100%;
       -webkit-box-pack: justify;
       justify-content: space-between;
-      padding: 24.5vh 5vw 3.75rem 4vw;
+      padding: 24.5vh 4vw 3.75rem 4vw;
   }
 }
 
