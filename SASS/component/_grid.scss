@@ -29,14 +29,14 @@ body[data-nav="true"] > main{
   justify-content:space-between;
   background-position: center 0%;
   transition: transform 500ms $slide-in;
-  @media (max-width: 768px){
-    flex-direction:column;
+  @media (max-width: 950px){
+    flex-direction:column-reverse;
   }
   > div {
     flex-direction: initial;
     align-items:center;
     justify-content: space-evenly;
-    @media (max-width: 768px){
+    @media (max-width: 950px){
       width: 100%;
     }
   }
@@ -77,10 +77,6 @@ body[data-nav="true"] > main{
 ///////////////
 // home page //
 ///////////////
-
-.company-logo{
-  max-height: 2rem;
-}
 
 .filter{
   width: 2.2rem;
@@ -125,7 +121,7 @@ body[data-nav="true"] > main{
   display:flex;
   width: 100vw;
   justify-content: space-between;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     top: 1.563rem;
     right: 3.03vw;
   }
@@ -137,7 +133,7 @@ body[data-nav="true"] > main{
 
 .company-logo{
   max-height: 2.2rem;
-  margin-left: 3rem;
+  margin-left: 4rem;
   filter: invert(5%) sepia(21%) saturate(32%) hue-rotate(319deg) brightness(100%) contrast(88%);
   @media (min-width:1920px){
     margin-left: 5rem;
@@ -189,7 +185,10 @@ body[data-nav="true"] > main{
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
+    margin-top: -4rem;
+  }
+  @media(min-width: 951px){
     padding: 10vw 3vw 5.75rem 3vw;
   }
   @media (min-width: 1024px) {
@@ -403,7 +402,7 @@ body[data-nav="true"] > main{
   height:100%;
   object-fit:cover;
   overflow:hidden;
-  @media (min-width: 769px){scale: 1;}
+  @media (min-width: 768px){scale: 1;}
   
 }
 
@@ -655,7 +654,7 @@ body[data-nav="true"] > main{
 }
 
 .work{
-  @media (max-width:769px){
+  @media (max-width:768px){
     padding-top: 5rem;
   }
 }
@@ -798,9 +797,6 @@ body[data-nav="true"] > main{
   margin: 2em 10em;
   @media (max-width:650px){
     margin: 1em 1em;
-  }
-  @media (max-width:769px){
-    // padding-top: 5rem;
   }
 }
 
