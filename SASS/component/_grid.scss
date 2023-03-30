@@ -98,7 +98,8 @@ body[data-nav="true"] > main{
 }
 
 .filter-one,
-.wrk-two {
+.wrk-two,
+.wrk-two > div {
   display:none;
   @media (min-width:1150px){
     display:block;
@@ -235,9 +236,19 @@ body[data-nav="true"] > main{
     
 }
 
+.wrk-display{
+  display: flex;
+  flex-direction: column;
+  overflow-x:hidden;
+  overflow-y: auto;
+}
+
 .work-slide-content {
+  max-width: 100vw;
+  @media (min-width:768px) {
     max-width: 23vw;
-    max-height: 43vh;
+    max-height: 43vh; 
+  }
 }
 
 //////////////////////////////////////////////////////////////////////
