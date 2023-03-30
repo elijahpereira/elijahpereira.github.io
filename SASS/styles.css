@@ -178,7 +178,7 @@ body[data-nav=true] > main {
 .filter-two {
   display: none;
 }
-@media (min-width: 1127px) {
+@media (min-width: 1150px) {
   .filter-two {
     display: block;
   }
@@ -334,15 +334,18 @@ body[data-nav=true] > main {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100vh;
 }
 
 .work-slide-content {
   max-width: 100vw;
+  margin-bottom: 2.2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .work-slide-content {
-    max-width: 23vw;
+    max-width: 24vw;
     max-height: 43vh;
+    margin-bottom: 2.2rem;
   }
 }
 
