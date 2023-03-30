@@ -141,7 +141,7 @@ body[data-nav="true"] > main{
 }
 
 .banner-right{
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .bannername{
@@ -234,6 +234,16 @@ body[data-nav="true"] > main{
     overflow: hidden;
     
 }
+
+.work-slide-content {
+    max-width: 23vw;
+    max-height: 43vh;
+}
+
+//////////////////////////////////////////////////////////////////////
+/////////////////////////contact.html/////////////////////////////////
+//////////////////////////////////////////////////////////////////////
+
 .contact-body{
   -webkit-animation: 2s ease-in 0s 1 fadeIn;
   animation: 2s ease-in 0s 1 fadeIn;

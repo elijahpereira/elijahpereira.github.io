@@ -217,7 +217,7 @@ body[data-nav=true] > main {
 }
 
 .banner-right {
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .bannername {
@@ -325,6 +325,11 @@ body[data-nav=true] > main {
 
 .slogan-line {
   overflow: hidden;
+}
+
+.work-slide-content {
+  max-width: 23vw;
+  max-height: 43vh;
 }
 
 .contact-body {
