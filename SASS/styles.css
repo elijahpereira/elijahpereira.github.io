@@ -139,7 +139,13 @@ body[data-nav=true] > main {
 .body,
 .contact-body {
   display: flex;
-  width: 50vw;
+  width: calc(50vw - 1.1rem);
+}
+
+.web-app-dash {
+  max-height: 43vh;
+  overflow: hidden;
+  margin-bottom: 2.2rem;
 }
 
 .filter {
@@ -334,19 +340,46 @@ body[data-nav=true] > main {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100vh;
+  margin-top: 84vh;
+}
+@media (min-width: 951px) {
+  .wrk-display {
+    margin-top: 33vh;
+  }
+}
+
+.work-home {
+  max-height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Hides the scrollbar on Internet Explorer and Edge */
+  scrollbar-width: none; /* Hides the scrollbar on Firefox */
+}
+.work-home::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar on WebKit based browsers */
 }
 
 .work-slide-content {
-  max-width: 100vw;
+  max-width: 100%;
   margin-bottom: 2.2rem;
 }
 @media (min-width: 1150px) {
   .work-slide-content {
     max-width: 24vw;
-    max-height: 43vh;
     margin-bottom: 2.2rem;
   }
+}
+
+.slide-r1 {
+  max-height: 33vh;
+}
+
+.slide-l3,
+.slide-r3 {
+  margin-bottom: 0px;
+}
+
+.wrk-two {
+  margin-top: 23vh;
 }
 
 .contact-body {
