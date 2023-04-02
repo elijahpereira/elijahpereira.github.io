@@ -252,6 +252,12 @@ body[data-nav="true"] > main{
   @media (min-width: 951px){
     margin-top: 33vh;
   }
+  @media (min-width: 1440px){
+    margin-top:45vh;
+  }
+  @media (min-width: 1920px){
+    margin-top: 33vh;
+  }
 }
 
 .work-home {
@@ -275,19 +281,37 @@ body[data-nav="true"] > main{
 
 .slide-r1 {
  max-height: 33vh;
+ @media (min-width: 1440px){
+  max-height: 51vh;
+ }
 }
 
-.slide-l2{
-  // max-height:39vh;
-}
+// .slide-l2{
+//   // max-height:39vh;
+// }
 
 .slide-l3,
 .slide-r3 {
   margin-bottom: 0px;
 }
 
+.slide-l3{
+  @media (min-width: 1440px){
+    max-height: 51vh;
+  }
+}
+.slide-r3 {
+  height: 64vh;
+}
+
 .wrk-two {
   margin-top: 23vh;
+  @media (min-width:1440px){
+    margin-top: 45vh;
+  }
+  @media (min-width:1920px){
+    margin-top: 39vh;
+  }
 }
 //////////////////////////////////////////////////////////////////////
 /////////////////////////contact.html/////////////////////////////////
