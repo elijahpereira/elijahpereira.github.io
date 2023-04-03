@@ -7,8 +7,10 @@ Opensource portfolio featuring a dynamic interactive nav, unique styles that has
 # Interesting Features
 <ul>
   <li>Dynamic Navigation</li>
-  <li>link styles</li>
-  <li>Font Awesome Library</li>
+  <li>Bootstrap, Tailwind & Font Awesome Library</li>
+  <li>Mobile First Styling</li>
+  <li>Optimized and Maintaible Code</li>
+  <li>Easy to understand UI and UX</li>
 </ul>
 
 # Stack Used
