@@ -302,6 +302,9 @@ body[data-nav="true"] > main{
 }
 .slide-r3 {
   height: 64vh;
+  @media (min-height: 1080px){
+    // height: 80vh;
+  }
 }
 
 .wrk-two {
