@@ -320,6 +320,10 @@ body[data-nav="true"] > main{
 /////////////////////////contact.html/////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+.contact-div{
+  flex-direction: column;
+}
+
 .contact-body{
   -webkit-animation: 2s ease-in 0s 1 fadeIn;
   animation: 2s ease-in 0s 1 fadeIn;
