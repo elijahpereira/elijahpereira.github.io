@@ -322,6 +322,9 @@ body[data-nav="true"] > main{
 
 .contact-div{
   flex-direction: column;
+  @media(min-width: 768px){
+    flex-direction: row;
+  }
 }
 
 .contact-body{

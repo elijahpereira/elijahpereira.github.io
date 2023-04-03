@@ -419,6 +419,11 @@ body[data-nav=true] > main {
 .contact-div {
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .contact-div {
+    flex-direction: row;
+  }
+}
 
 .contact-body {
   animation: 2s ease-in 0s 1 fadeIn;
