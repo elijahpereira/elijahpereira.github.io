@@ -20,7 +20,7 @@ Engineered for optimal performance and seamlessly user experiences across all vi
 
 | Status | Goal | Labels | Repository |
 | :---: | :--- | --- | --- |
-| ✔ | Dynamic Navigation | `ready` | <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Repo</a> |
-| ✔ | Responsive Mobile-First Styles | `ready` |  <a href=[https://github.com/elijahpereira/elijahpereira.github.io]>Repo</a> |
-| ❌ | Autopanning Thumbnail Display to Preview Projects | `in progress` |  <a href=[https://github.com/elijahpereira/elijahpereira.github.io]>Repo</a> |
-| ❌ | Complient WCAG  | |  <a href=[https://github.com/elijahpereira/elijahpereira.github.io]>Repo</a> |
+| ✔ | Dynamic Navigation | `ready` | <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
+| ✔ | Responsive Mobile-First Styles | `ready` |  <a href=[https://github.com/elijahpereira/elijahpereira.github.io]>Live</a> |
+| ❌ | Autopanning Thumbnail Display to Preview Projects | `in progress` |  `in progress` |
+| ❌ | Complient WCAG  | `in progress` |  `in progress` |
