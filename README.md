@@ -16,5 +16,12 @@ Troubleshooting for this project was done using Stack Overflow, StackExchange, G
 | :---: | :--- | --- | --- |
 | ✔ | Dynamic Navigation | `ready` | <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
 | ✔ | Responsive Mobile-First Styles | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
-| ❌ | Autopanning Thumbnail Display to Preview Projects | `in progress` |  `in progress` |
+| ✔ | Constant One Page Interface | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
+| ✔ | Resume Implimented Into Website with Link to External Resume | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
+| ✔ | Slidshow to display Previous Projects With Bootstrap | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
+| ✔ | Dynamic Animations across all static webpages | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
+| ✔ | Validated Code | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
+| ✔ | Host Page with GitHub Pages on custom Domain | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
 | ❌ | WCAG Compliant  | `in progress` |  `in progress` |
+| ❌ | Autopanning Thumbnail Display to Preview Projects | `in progress` |  `in progress` |
+| ❌ | Individual Lightboxes to display Technologies Used in Each Project  | `in progress` |  `in progress` |
