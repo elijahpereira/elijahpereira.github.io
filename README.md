@@ -15,3 +15,14 @@ Engineered for optimal performance and seamlessly user experiences across all vi
   <li>Optimized and Maintaible Code</li>
   <li>Easy to understand UI and UX</li>
 </ul>
+
+# Application Roadmap
+
+| Status | Goal | Labels | Repository |
+| :---: | :--- | --- | --- |
+| ✔ | [Pm doc draft 2](https://github.com/ipfs/pm/pull/155) | | <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
+| ❌ | [Define options for the Mechanics of Tracking Project Milestones](https://github.com/ipfs/pm/issues/154) |`in progress`| <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
+| ❌ | [Test out the PM Process on go-ipfs Project](https://github.com/ipfs/pm/issues/153) |`ready`| <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
+| ✔ | [Overhaul README](https://github.com/ipfs/pm/pull/136) | | <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
+| ✔ | [(WIP) Project Management Process document](https://github.com/ipfs/pm/pull/131) | | <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
+| ❌ | [Project Management Process discussion](https://github.com/ipfs/pm/issues/125) |`in progress`| <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
