@@ -20,7 +20,7 @@ Engineered for optimal performance and seamlessly user experiences across all vi
 
 | Status | Goal | Labels | Repository |
 | :---: | :--- | --- | --- |
-| ✔ | [Pm doc draft 2](https://github.com/ipfs/pm/pull/155) | | <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
+| ✔ | Dynamic Navigation | | <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
 | ❌ | [Define options for the Mechanics of Tracking Project Milestones](https://github.com/ipfs/pm/issues/154) |`in progress`| <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
 | ❌ | [Test out the PM Process on go-ipfs Project](https://github.com/ipfs/pm/issues/153) |`ready`| <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
 | ✔ | [Overhaul README](https://github.com/ipfs/pm/pull/136) | | <a href=https://github.com/ipfs/pm>ipfs/pm</a> |
