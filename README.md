@@ -1,5 +1,7 @@
 <h1>Open Source Portfolio</h1>
-My First Portfolio, experimenting with HTML5, CSS6, Sass and Bootstrap.
+My Portfolio after finishing my Tech Degree with Team Treeehouse.
+
+This web application was deployed using GitHub Pages and was created with HTML5, Sass, Javascript, CSS3, Bootstrap & Tailwind.
 
 Troubleshooting for this project was done using Stack Overflow, StackExchange, Google and CHATGPT.
 
