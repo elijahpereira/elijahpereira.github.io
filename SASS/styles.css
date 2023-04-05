@@ -360,7 +360,7 @@ body[data-nav=true] > main {
 
 .work-home {
   max-height: 100vh;
-  overflow-y: auto;
+  overflow: auto;
   -ms-overflow-style: none; /* Hides the scrollbar on Internet Explorer and Edge */
   scrollbar-width: none; /* Hides the scrollbar on Firefox */
 }

@@ -30,5 +30,23 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].getElementByclassName += " active";
 } 
+
+//autopanning script
+
+var div = document.getElementsByClassName('work-home')[0];
+var duration = 2000; // duration of the animation in milliseconds
+var start = Date.now(); // timestamp when the animation starts
+
+function animateScroll() {
+  var elapsed = Date.now() - start; // elapsed time in milliseconds
+  var progress = Math.min(elapsed / duration, 1); // progress from 0 to 1
+  div.scrollTop = progress * (div.scrollHeight - div.clientHeight); // calculate the new scrollTop value
+
+  if (progress < 1) {
+    // request another animation frame if the animation is not finished yet
+    requestAnimationFrame(animateScroll);
+  }
+}
+window.onload = animateScroll(); // start the animation
