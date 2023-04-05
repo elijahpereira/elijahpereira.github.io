@@ -22,6 +22,6 @@ Troubleshooting for this project was done using Stack Overflow, StackExchange, G
 | ✔ | Dynamic Animations across all static webpages | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
 | ✔ | Validated Code | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
 | ✔ | Host Page with GitHub Pages on custom Domain | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
-| ❌ | WCAG Compliant  | `in progress` |  `in progress` |
+| ✔ | WCAG Compliant  | `in progress` |  `in progress` |
 | ❌ | Autopanning Thumbnail Display to Preview Projects | `in progress` |  `in progress` |
 | ❌ | Individual Lightboxes to display Technologies Used in Each Project  | `in progress` |  `in progress` |
