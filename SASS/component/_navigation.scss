@@ -74,3 +74,8 @@ body[data-nav="true"] > nav > #nav-links{
   transform: translateY(-10%) scale(1);
 }
 
+//auto scrolling
+.work-home.animate {
+  opacity: 1;
+  transform: translateY(0%);
+}

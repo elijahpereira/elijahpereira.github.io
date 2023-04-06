@@ -361,6 +361,7 @@ body[data-nav=true] > main {
 .work-home {
   max-height: 100vh;
   overflow: auto;
+  transition: opacity 2s, transform 2s; /* set transition for scrolling animation*/
   -ms-overflow-style: none; /* Hides the scrollbar on Internet Explorer and Edge */
   scrollbar-width: none; /* Hides the scrollbar on Firefox */
 }
@@ -1075,6 +1076,11 @@ nav {
 
 body[data-nav=true] > nav > #nav-links {
   transform: translateY(-10%) scale(1);
+}
+
+.work-home.animate {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 @font-face {
