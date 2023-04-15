@@ -23,4 +23,3 @@ Troubleshooting for this project was done using Stack Overflow, Google and CHATG
 | ✔ | Validated Code | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
 | ✔ | Host Page with GitHub Pages on custom Domain | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
 | ✔ | WCAG Compliant  | `ready` |  <a href='https://github.com/elijahpereira/elijahpereira.github.io'>Live</a> |
-| ❌ | Autopanning Thumbnail Display to Preview Projects | `in progress` |  `in progress` | 
