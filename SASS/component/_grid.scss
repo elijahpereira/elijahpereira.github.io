@@ -217,6 +217,7 @@ body[data-nav="true"] > main{
     letter-spacing: -0.04em;
     position: relative;
     font-size: 17.85vw;
+    margin: 0.67em 0;
     @media (min-width: 448px) {
       font-size: calc(70px + 14 * ((100vw - 448px) / 448));
   }
